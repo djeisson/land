@@ -11,7 +11,7 @@
 }
 
 .bg-home{
-    min-height: 100vh;
+    min-height: 100%;
     background-image: url(assets/bg-home.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -101,22 +101,75 @@ header{
     max-width: 425px;
 }
 @media screen and (max-width:768px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img{
+        filter: hue-rotate(240deg) grayscale(100%);
+    }
+    .logo strong{
+        color: black;
+    }
+
     .section-info-header{
         display: grid;
         grid-template-columns:1fr;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        text-align: center;
     }
     .img-header{
-        display: none;
-    }
-    .logo strong{
         display: none;
     }
     .links-list{
         display: none;
     }
+
+    .info-header a{
+        width: 90%;
+    }
+}
+
+.services{
+    min-height: 500px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+.services div{
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.services div>img{
+    width: 100px;
+}
+.services div>span{
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.services div>a{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: var(--secundaria);
+    width: 70%;
+    text-align: center;
+    color: white;
 }
 
 main{
