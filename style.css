@@ -65,6 +65,71 @@ header{
     border-bottom: 1.3px solid black;
 }
 
+.menu-mobile{
+    display: none;
+}
+
+.menu-mobile button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-menu-mobile{
+    width: 50px;
+    background-color: transparent;
+}
+
+.logo-menu-mobile{
+    width: 150px;
+}
+
+#fechar{
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    color: red;
+
+}
+
+#links{
+    text-align: center;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+#links a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#links>a:hover{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+}
+
+.menu-icons a i:hover{
+    background-color: transparent;
+    color: var(--principal);
+}
+
 .section-info-header{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -116,7 +181,7 @@ header{
         filter: hue-rotate(240deg) grayscale(100%);
     }
     .logo strong{
-        color: black;
+        display: none;
     }
 
     .section-info-header{
@@ -137,7 +202,12 @@ header{
     .info-header a{
         width: 90%;
     }
+
+    .menu-mobile{
+        display: flex;
+    }
 }
+
 
 .services{
     background-color: var(--principal);
