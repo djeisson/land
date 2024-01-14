@@ -1,6 +1,10 @@
 :root{
     --principal:#0049af;
     --secundaria:#003daf;
+
+    --proxima: rgb(60, 23, 209);
+    --proxima-ligth: rgb(70, 27, 243);
+
 }
 
 *{
@@ -10,13 +14,93 @@
     font-family: sans-serif;
 }
 
-.whats{
-    position: fixed;
-    width: 50px;
-    bottom: 20px;
-    right: 20px;
+/*globais*/
+.btn-principal{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color:var(--proxima);
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    border: none;
 }
 
+.btn-principal:hover{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color:var(--proxima-ligth);
+    max-width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.btn-light{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color:white;
+    max-width: 300px;
+    text-align: center;
+    color: black;
+    border-radius: 10px 0px;
+}
+
+.btn-light:hover{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color:var(--proxima);
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    transition: 1s;
+}
+
+.btn-deploy{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color:black;
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    border-radius: 0px 10px;
+    min-width: 103px;
+}
+
+.btn-deploy:hover{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color:var(--proxima);
+    max-width: 300px;
+    text-align: center;
+    color: black;
+    border-radius: 0px 10px;
+    min-width: 103px;
+    transition: 1s;
+}
+
+/*whats*/
+.whats{
+    width: 70px;
+    border-radius: 10px;
+    background-color: #2aa81a;
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+}
+
+.whats:hover{
+    animation: resize .5s ease-in ;
+}
+
+@keyframes resize{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+/*header*/
 .bg-home{
     min-height: 100%;
     background-image: url(assets/bg-home.svg);
@@ -57,14 +141,15 @@ header{
 .links-list a{
     padding: 4px 8px;
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+    color: white;
+    font-weight: 700;
 }
 .links-list a:hover{
     padding: 4px 8px 3px 8px;
     border-bottom: 1.3px solid black;
 }
 
+/*menu mobile*/
 .menu-mobile{
     display: none;
 }
@@ -154,14 +239,6 @@ header{
     margin-bottom: 34px;
 }
 
-.info-header a{
-    text-decoration: none;
-    padding: 8px 12px;
-    background-color: var(--secundaria);
-    width: 300px;
-    text-align: center;
-    color: white;
-}
 
 .img-header{
     display: flex;
@@ -221,14 +298,13 @@ header{
 }
 
 .services div{
-    border-radius: 7px;
     margin-right:10px ;
     margin-bottom: 10px;
     background-color: white;
     text-align: center;
     flex: 1;
-    min-width: 250px;
-    max-width: 400px;
+    min-width: 200px;
+    max-width: 350px;
     height: 400px;
     display: flex;
     align-items: center;
@@ -238,32 +314,145 @@ header{
 }
 
 .services div>img{
+    margin-bottom: 20px;
     width: 100px;
 }
-.services div>span{
-    margin-top: 10px;
-    font-size: 28px;
+
+.services div>strong{
+    margin-bottom: 14px;
 }
 
-.services div>a{
-    margin-top: 14px;
-    text-decoration: none;
-    padding: 8px 12px;
-    background-color: var(--secundaria);
-    width: 70%;
-    text-align: center;
-    color: white;
+.services div>p{
+   margin-bottom: 24px;
 }
+
+
+/*Main*/
 
 main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 500px;
+    text-align: left;
+}
+
+.card-img-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img-information{
+    height: 100%;
+    width: 100%;
+}
+
+.question-information{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 300px;
-    text-align: center;
 }
 
+.question-information h2{
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.question-information p{
+    color: var(--principal);
+}
+
+.list-duvida li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.list-duvida li span{
+    color: var(--principal);
+    margin: 10px;
+    list-style: none;
+    font-size: 34px;
+}
+
+.btn-principal{
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width:768px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 500px;
+        text-align: left;
+    }
+}
+
+/*conttatos*/
+.contatos{
+    min-height: 500px;
+    background-color: var(--principal);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario h2{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+label{
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+
+.contatos form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border: 1px solid var(--secundaria);
+    min-width: 600px;
+    height: 30px;
+}
+
+.btn-principal{
+    margin-top: 14px;
+}
+
+@media screen and (max-width:768px) {
+    .contatos{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    input{
+        border: 1px solid var(--secundaria);
+        min-width: 300px;
+        height: 30px;
+    }
+}
 
 /*footer*/
 .info-footer{
@@ -287,7 +476,10 @@ main{
 }
 
 .header-icons{
+    margin-left: 10px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
     margin-bottom: 24px;
 }
@@ -299,9 +491,8 @@ main{
 .contatos-footer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
-    text-align: center;
 }
 
 .contatos-footer span{
@@ -310,7 +501,6 @@ main{
 }
 
 .contatos-footer p{
-    padding: 10px;
     width: 100%;
     color: white;
     margin: 0 auto;
@@ -318,6 +508,10 @@ main{
 
 
 /*portifolio*/
+.img-header img{
+    height: 100%;
+}
+
 .portifolio{
     background-color: var(--principal);
     min-height: 600px;
@@ -337,6 +531,14 @@ main{
     flex-direction: column;
 }
 
+#btn-layout{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 
 .portifolio div img{
     margin-bottom: 24px;
@@ -351,9 +553,14 @@ main{
     margin-bottom: 24px;
 }
 
-.portifolio div a{
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: var(--secundaria);
-    color: white;
+
+/*agradecimento*/
+
+.agradecimento{
+    min-height: 400px;
+    background-color: var(--principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
