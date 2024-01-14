@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="shortcut icon" href="assets/logo-SF.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <link rel="shortcut icon" href="assets/logo-SF.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
     <title>Landing Boosters - Soluções web para sua empresa!</title>
@@ -15,7 +17,7 @@
     <a href="https://wa.me/message/M4PYX4DS6M65G1" target="_blank"><img src="assets/whatsapp.png" alt="whatsapp" class="whats"></a>
     <div class="bg-home">
         <header>
-            <div class="logo">
+            <div class="logo" data-aos="flip-right" data-aos-duration="1500">
                 <img src="assets/logo-black-removebg-preview.png" alt="Logo landing boosters">
                 <strong>Landing Boosters</strong>
             </div>
@@ -27,8 +29,9 @@
             </nav>
             <div class="menu-mobile">
                 <button onClick="abrirMenu()"><img class="btn-menu-mobile" src="assets/menu-mobile.png" alt=""/></button>
+                
                 <nav class="links-list-mobile" id="links">
-                    <button onClick="fecharMenu()" id="fechar">X</button>
+                    <img class="logo-menu-mobile" src="assets/LogoInteira-SF.png" alt="">
                     <a href="#">Home</a>
                     <a href="#">Quem somos</a>
                     <a href="#">Soluções</a>
@@ -38,57 +41,58 @@
                             <i class="fa-brands fa-instagram fa-2x"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-brands fa-tiktok fa-2x"></i>
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
                         </a>
                         <a href="#">
                             <i class="fa-brands fa-whatsapp fa-2x"></i>
                         </a>
                     </div>
+                    <button onClick="fecharMenu()" id="fechar">Fechar</button>
                 </nav>
             </div>
         </header>
         <section class="section-info-header">
-            <div class="info-header">
+            <div class="info-header" data-aos="fade-right">
                 <h1>Soluções web para impulsionar a sua empresa</h1>
                 <p>Criações de sites e landing pages, Google meu negócio, Google maps, Registro de domínio e mais</p>
                 <a class="btn-principal" href="https://wa.me/message/M4PYX4DS6M65G1" target="_blank">Impulsionar minha empresa</a>
             </div>
-            <div class="img-header">
+            <div class="img-header" data-aos="fade-left" data-aos-delay="1500">
                 <img src="assets/asidebg.svg" alt="">
             </div>
         </section>
     </div>
     <section class="services">
-        <div>
+        <div data-aos="flip-up">
             <img src="assets/computador.png" alt="">
             <strong>Desenvolvimento web</strong>
             <p>Desenvolvimento de sites modernos e responsivos</p>
         </div>
-        <div>
+        <div data-aos="flip-up" data-aos-delay="300">
             <img src="assets/maps.png" alt="">
             <strong>Google maps</strong>
             <p>Facilite a localização da seu empresa</p>
         </div>
-        <div>
+        <div data-aos="flip-up" data-aos-delay="700">
             <img src="assets/google.png" alt="">
             <strong>Google meu negócio</strong>
             <p>Mostre tudo o que sua empresa tem para oferecer</p>
         </div>
-        <div>
+        <div data-aos="flip-up" data-aos-delay="1000">
             <img src="assets/services.png" alt="">
             <Strong>E mais!</Strong>
             <p>Venha conhecer as nossas soluções</p>
             <a class="btn-principal" href="https://wa.me/message/M4PYX4DS6M65G1" target="_blank">Saiba mais</a>
         </div>
     </section>
-    <main>
-        <div class="card-img-information">
+    <main data-aos="zoom-in-up" data-aos-delay="500">
+        <div class="card-img-information" data-aos="zoom-in-up">
             <img class="img-information" src="assets/outro-computador.png" alt="outro computador">
         </div>
-        <div class="question-information">
+        <div class="question-information" >
             <h2>Por que investir em um site <strong>personalizado</strong>?</h2>
             <p>LANDINGBOOSTERS</p>
-            <ul class="list-duvida">
+            <ul class="list-duvida" >
                 <li><span>+</span>Design Exclusivo e Identidade de Marca</li>
                 <li><span>+</span>Funcionalidades Específicas e Sob Medida</li>
                 <li><span>+</span>SEO (Otimização para Mecanismos de Busca)</li>
@@ -111,7 +115,7 @@
                     <i class="fa-brands fa-whatsapp fa-2x"></i>
                 </a>
             </div>
-            <form action="https://formsubmit.co/boosterslanding@gmail.com" method="POST">
+            <form action="https://formsubmit.co/boosterslanding@gmail.com" method="POST" data-aos="fade-left">
                 <label for="name">Nome/Razão Social</label>
                 <input type="text" name="name" required>
                 <label for="email">Email</label>
@@ -147,6 +151,7 @@
                 </div>
                 <span>Fone: (46) 99139-0026</span>
                 <span>Email: boosterslanding@gmail.com</span>
+                <span>Pato Branco, PR - Basil (85.503-418)</span>
                 <p>Landing Boosters - &copy; Todos os direitos reservados</p>
             </div>
         </div>

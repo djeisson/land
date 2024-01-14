@@ -1,3 +1,6 @@
+AOS.init();
+
+
 const menu = document.getElementsByid('links')
 
 function abrirMenu() {
