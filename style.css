@@ -2,8 +2,8 @@
     --principal:#0049af;
     --secundaria:#003daf;
 
-    --proxima: rgb(60, 23, 209);
-    --proxima-ligth: rgb(70, 27, 243);
+    --proxima: #002c69;
+    --proxima-ligth: #002c69c2;
 
 }
 
@@ -27,11 +27,13 @@
 
 .btn-principal:hover{
     text-decoration: none;
-    padding: 8px 12px;
-    background-color:var(--proxima-ligth);
+    padding: 6px 10px;
+    background-color:white;
+    border: 1px solid var(--proxima);
     max-width: 300px;
     text-align: center;
-    color: white;
+    color: black;
+    transition: 1s;
 }
 
 .btn-light{
@@ -79,6 +81,7 @@
 
 /*whats*/
 .whats{
+    z-index: 999;
     width: 70px;
     border-radius: 10px;
     background-color: #2aa81a;
@@ -413,6 +416,9 @@ main{
 }
 
 .formulario h2{
+    padding: 4px 8px;
+    border-bottom: 2px solid var(--proxima);
+    color: white;
     text-align: center;
     margin-bottom: 24px;
 }
@@ -446,6 +452,10 @@ input{
         grid-template-columns:1fr;
         align-items: center;
         justify-content: center;
+    }
+
+    .formulario{
+        padding: 30px;
     }
     
     input{
@@ -486,7 +496,18 @@ input{
 }
 
 .header-icons a i{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--proxima);
     color: white;
+}
+
+.header-icons a i:hover{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    transition: 1s;
+    color: var(--proxima);
 }
 
 .contatos-footer{
