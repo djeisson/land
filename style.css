@@ -394,6 +394,10 @@ main{
         min-height: 500px;
         text-align: left;
     }
+
+    .question-information{
+        padding: 30px;
+    }
 }
 
 /*conttatos*/
@@ -575,6 +579,32 @@ input{
     margin-bottom: 24px;
 }
 
+/*About*/
+.sobre{
+    padding: 30px;
+    background-image: linear-gradient(to left,#0049af, var(--principal));
+}
+
+.sobre h1{
+    color: white;
+    margin-bottom: 14px;
+    text-shadow: 5px 0px 1px black;
+}
+
+.sobre p{
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.sobre h2{
+    color: white;
+    margin-bottom: 14px;
+    text-shadow: 5px 0px 1px black;
+}
+
+.sobre h3{
+    margin-bottom: 14px;
+}
 
 /*agradecimento*/
 
