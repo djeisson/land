@@ -399,7 +399,6 @@ main{
         padding: 30px;
     }
 }
-
 /*conttatos*/
 .contatos{
     min-height: 500px;
@@ -448,6 +447,7 @@ input{
 .btn-principal{
     margin-top: 14px;
 }
+
 
 @media screen and (max-width:768px) {
     .contatos{
@@ -549,8 +549,7 @@ input{
 }
 
 .portifolio div{
-    margin-bottom: 24px;
-    max-width: 368px;
+    max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -568,7 +567,7 @@ input{
 
 .portifolio div img{
     margin-bottom: 24px;
-    max-width: 365px;
+    max-width: 400px;
 }
 
 .portifolio div strong{
